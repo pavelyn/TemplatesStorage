@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Multi browser test" parallel="methods" thread-count="3">
+
+    <test name="Chrome execution">
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="templateTestng.test.*"/>
+        </packages>
+    </test>
+
+</suite>
